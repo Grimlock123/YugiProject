@@ -44,10 +44,17 @@ public class Card extends absCard{
   public void setMonType(String monType){
     this.monType=monType;
   }
+  public Boolean getPosition(){
+    return pos;
+  }
+  public void changePosition(Boolean pos){
+    this.pos=!pos;
+  }
+  public Boolean
   public String toString(){
     return "Name: "+name+" Level: "+level+"\n"+
     "Attack: "+atk+" Defense: "+def+" Attribute: "+atttibute+"\n"
-    +"Monster Type: "+monType;
+    +"Monster Type: "+monType+" Card Position "+pos;
   }
   public static void main(String[] args) {
     Card newCard=new Card("M","M","M","M",1,1,1,"M","M");
